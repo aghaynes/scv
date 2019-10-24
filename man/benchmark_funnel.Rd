@@ -11,7 +11,7 @@ benchmark_funnel(exp, scvtx = 3, alphax = 0.95)
 
 \item{scvtx}{benchmark SCV , by default 3}
 
-\item{alphax}{alpha level, by default 95%}
+\item{alphax}{alpha level, by default 95\%}
 }
 \value{
 exp

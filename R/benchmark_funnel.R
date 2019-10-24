@@ -3,7 +3,7 @@
 #'
 #' @param exp expected values from indirect standardization (observed/expected)
 #' @param scvtx benchmark SCV , by default 3
-#' @param alphax alpha level, by default 95%
+#' @param alphax alpha level, by default 95\%
 #'
 #' @return exp
 #'
@@ -20,11 +20,8 @@
 #'
 #' benchmark_funnel(exp,scvtx=3, alphax=.95)
 #'
-#' @import DCluster
-#'
 #' @export
-
-
+#' @import DCluster
 
 benchmark_funnel<- function(exp,scvtx=3,alphax=.95){
 
