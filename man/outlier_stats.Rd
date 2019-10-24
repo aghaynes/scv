@@ -39,7 +39,7 @@ Outlier detection from empirical and benchmark Poisson-Gamma distribution
 }
 \examples{
 
-data(nc.sids, package= "spData"))
+data(nc.sids, package= "spData")
 
 obs<-nc.sids$SID74
 

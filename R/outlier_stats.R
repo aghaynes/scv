@@ -30,7 +30,7 @@
 #'
 #' @examples
 #'
-#' data(nc.sids, package= "spData"))
+#' data(nc.sids, package= "spData")
 #'
 #' obs<-nc.sids$SID74
 #'
