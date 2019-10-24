@@ -1,31 +1,35 @@
-#' Outlier detection from empirical and benchmark Poisson-Gamma distribution
+#' Outlier statistics and outlier gains
+#'
+#' Outlier detection from  benchmark Poisson-Gamma distribution (a distribution drawn from a benchmark SCV).
+#' Outlier gains are the additions or reductions (depending on whether it is a desired outcome or not) to the system that would occur
+#' under a scenario where all identified upper outliers or lower outliers are brought into the 95\% bounds of the benchmark distribution
 #'
 #'
-#' @param obsx  observed
-#' @param expx expected
+#' @param obsx  observed cases for a given population
+#' @param expx expected cases from standardization of given population
 #' @param scvtx benchmark SCV, default 3
 #' @param alphax alpha level, default .95
 #'
 #'
-#' @import DCluster
+#' @import DCluster ggplot2
 #'
 #' @return obs
 #'
 #' exp
 #'
-#' upper_lim_qnbinom upper limit O/E of benchmark Poisson-Gamma distribution
+#' upper_lim_qnbinom Upper limit O/E of benchmark Poisson-Gamma distribution
 #'
-#' lower_lim_qnbinom lower limit O/E of benchmark Poisson-Gamma distribution
+#' lower_lim_qnbinom Lower limit O/E of benchmark Poisson-Gamma distribution
 #'
-#' is_outlier identifes O/E as upper or lower outlier (else is NULL)
+#' is_outlier Identifes O/E as upper or lower outlier (else is NULL)
 #'
-#' pval_ref probability of O/E ratio in benchmark Poisson-Gamma distribution
+#' pval_ref Probability of O/E ratio in benchmark Poisson-Gamma distribution
 #'
-#' outlier_diff difference between outlier and benchmark upper or lower limit
+#' outlier_diff Difference between outlier and benchmark upper or lower limit
 #'
-#' upper_outlier_gain system gains under from scenario of normalizing upper outliers
+#' upper_outlier_gain System gains under scenario of normalizing upper outliers
 #'
-#' lower_outlier_gain system gains under from scenario of normalizing lower outliers
+#' lower_outlier_gain System gains under scenario of normalizing lower outliers
 #'
 #'
 #' @examples

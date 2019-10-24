@@ -7,29 +7,30 @@
 scv_stats(obsx, expx)
 }
 \arguments{
-\item{obsx}{observed}
+\item{obsx}{observed cases for a given population}
 
-\item{expx}{expected}
+\item{expx}{expected cases from standardization of given population}
 }
 \value{
 obs
 
  exp
 
-pval probability of O/E ratio in empirical Poisson-Gamma distribution
+pval Probability of O/E ratio in empirical Poisson-Gamma distribution
 
-smoothed empirical bayes smoothing of O/E ratio
+smoothed Empirical bayes smoothing of O/E ratio
 
-scv systematic component of variation
+scv Systematic component of variation
 
-scv_var bootstrapped variance of the scv
+scv_var Bootstrapped variance of the scv
 
-scv_CI_low bootstrapped lower 95\% confidence interval of SCV
+scv_CI_low Bootstrapped lower 95\% confidence interval of SCV
 
-scv_CI_upp bootstrapped upper 95\% confidence interval of SCV
+scv_CI_upp Bootstrapped upper 95\% confidence interval of SCV
 }
 \description{
-Poisson-Gamma systematic component of variation
+Extension of the empbaysmooth function in DCluster. Adds a computation of the SCV as 100* \emph{nu}/\emph{alpha^2}.
+Computes from simulations a bootstrapped variance and 95\% CI of the SCV.
 }
 \examples{
 

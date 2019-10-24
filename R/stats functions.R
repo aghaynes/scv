@@ -9,11 +9,11 @@
 #'
 #' @keywords internal
 #'
-#' @import DCluster
+#' @import DCluster ggplot2
 #'
 
 
- 
+
 ### #systematic variance from poisson gamma model
 .pg_var<-function(obsx,expx){
   mp<-empbaysmooth(obsx,expx,maxiter=200)
