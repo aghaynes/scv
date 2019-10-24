@@ -20,9 +20,9 @@ obs
 
 exp
 
-upper_lim_qnbinom upper limit O/E of benchmark Poisson-Gamma distribution 
+upper_lim_qnbinom upper limit O/E of benchmark Poisson-Gamma distribution
 
-lower_lim_qnbinom lower limit O/E of benchmark Poisson-Gamma distribution 
+lower_lim_qnbinom lower limit O/E of benchmark Poisson-Gamma distribution
 
 is_outlier identifes O/E as upper or lower outlier (else is NULL)
 
@@ -39,7 +39,7 @@ Outlier detection from empirical and benchmark Poisson-Gamma distribution
 }
 \examples{
 
-data(nc.sids)
+data(nc.sids, package= "spData"))
 
 obs<-nc.sids$SID74
 

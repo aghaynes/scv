@@ -33,7 +33,7 @@ Poisson-Gamma systematic component of variation
 }
 \examples{
 
-data(nc.sids)
+data(nc.sids, package= "spData")
 
 obs<-nc.sids$SID74
 

@@ -25,7 +25,7 @@ Funnel plot boundaries for a Poisson-Gamma distribution with a benchmark SCV
 }
 \examples{
 
-data(nc.sids)
+data(nc.sids, package= "spData")
 
 exp<-nc.sids$BIR74*sum(nc.sids$SID74)/sum(nc.sids$BIR74)
 
