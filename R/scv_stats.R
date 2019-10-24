@@ -18,9 +18,9 @@
 #' 
 #' scv_var bootstrapped variance of the scv
 #' 
-#' scv_CI_low bootstrapped lower 95% confidence interval of SCV
+#' scv_CI_low bootstrapped lower 95\% confidence interval of SCV
 #' 
-#' scv_CI_upp bootstrapped upper 95% confidence interval of SCV
+#' scv_CI_upp bootstrapped upper 95\% confidence interval of SCV
 #' 
 #' 
 #' @examples
