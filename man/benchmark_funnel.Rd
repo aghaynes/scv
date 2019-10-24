@@ -36,6 +36,7 @@ outlier<-outlier_stats(obs,exp,scvtx=3, alphax=.95)
 
 funnel<-benchmark_funnel(exp,scvtx=3, alphax=.95)
 
+library(ggplot2)
 ggplot(funnel,aes(exp,upperCI))+
 geom_line()+
 geom_line(aes(y=lowerCI))+
